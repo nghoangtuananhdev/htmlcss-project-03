@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --dark-blue: #10375C;   
+    --light-blue: #2E80CE;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -10,3 +15,78 @@ body {
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
 }
+
+/* Common */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+    height: 100vh;
+    background-color: var(--dark-blue);
+    padding-top: 30px;
+    padding-bottom: 110px;
+}
+
+.logo {
+    display: flex;
+    position: relative;
+    font-size: 1em;
+    line-height: 3.1em;
+}
+
+.logo__circle::before, 
+.logo__circle::after {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.logo__circle::before {
+    content: "";
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    background: var(--light-blue); 
+}
+
+.logo__circle::after {
+    position: absolute;
+    top: 1.1em;
+    left: 1.1em;
+    content: "";
+    display: inline-block;
+    width: 1.6em;
+    height: 1.6em;
+    background-color: #fff;
+}
+
+.logo__brand {
+    margin-left: 6px;
+}
+
+.logo__brand-main { 
+    color: #FFF;
+    text-align: right;
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 77.778%; 
+}
+
+.logo__brand-sub {
+    color: #FFF;
+    text-align: right;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.4em;
+}
+
