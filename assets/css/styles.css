@@ -514,3 +514,192 @@ a {
   font-weight: 300;
   line-height: 1.75;
 }
+
+/* Intro */
+
+.intro {
+  padding-top: 170px;
+}
+
+.intro__body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 188px;
+}
+
+.intro__media {
+  position: relative;
+}
+
+.intro__img {
+  width: 512px;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.intro__img--small {
+  position: absolute;
+  top: 121px;
+  left: 238px;
+  z-index: 10;
+  width: 332px;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.intro__heading {
+  margin-top: 82px;
+  width: 470px;
+  color: #10375c;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2; /* 120% */
+  letter-spacing: -1px;
+}
+
+.intro__desc {
+  margin-top: 18px;
+  width: 468px;
+  color: #575f66;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.667; /* 166.667% */
+}
+
+.intro__btn {
+  display: inline-block;
+  margin-top: 38px;
+  width: 205px;
+  height: 60px;
+  border-radius: 30px;
+  background: #2e80ce;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 60px;
+  transition: opacity 0.2s ease;
+}
+
+.intro__btn:hover {
+  opacity: 0.9;
+}
+
+/* Dentist */
+
+.dentist {
+  margin-top: 253px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dentist__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dentist__heading {
+  color: #10375c;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2; /* 120% */
+  letter-spacing: -1px;
+}
+
+.dentist__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 38px;
+  width: 205px;
+  height: 60px;
+  border-radius: 30px;
+  background: #2e80ce;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  transition: opacity 0.2s ease;
+}
+
+.dentist__btn:hover {
+  opacity: 0.9;
+}
+
+.dentist__list {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.dentist-item {
+  width: 270px;
+}
+
+.dentist-item__media {
+  border-radius: 6px;
+  background: #eaf6ff;
+  padding-top: 28px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.dentist-item__img {
+  display: block;
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.dentist-item__name {
+  margin-top: 12px;
+  color: #10375c;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.75;
+}
+
+.dentist-item__desc {
+  color: #575f66;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.86;
+}
+
+.dentist__controls {
+  margin-top: 38px;
+  display: flex;
+  gap: 18px;
+}
+
+.dentist__control-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #575f66;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.dentist__control-btn:hover {
+  background: #2e80ce;
+}
+
+.dentist__control-btn:hover path {
+  stroke: #fff;
+  transition: 0.3s ease;
+}
+
+.dentist__control-btn--next {
+  transform: scaleX(-1);
+}
