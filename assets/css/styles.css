@@ -481,6 +481,10 @@ a {
 
 .how-it-works__item:hover {
   box-shadow: 0 0 0 16px #2e80ce;
+  transform: translateY(-16px);
+  transition:
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
 }
 
 .how-it-works__item:hover .how-it-works__more {
@@ -707,7 +711,7 @@ a {
 /* Banner */
 
 .banner {
-  margin-top: 170px;
+  margin-top: 265px;
 }
 
 .banner__body {
