@@ -703,3 +703,61 @@ a {
 .dentist__control-btn--next {
   transform: scaleX(-1);
 }
+
+/* Banner */
+
+.banner {
+  margin-top: 170px;
+}
+
+.banner__body {
+  padding-top: 95px;
+  padding-bottom: 75px;
+  border-radius: 4px;
+  background: #2e80ce;
+  display: flex;
+}
+
+.banner__media {
+  position: relative;
+  width: calc(70px + 284px);
+  flex-shrink: 0;
+}
+
+.banner__img {
+  position: absolute;
+  top: calc((95px + 76px) * -1);
+  left: 70px;
+}
+
+.banner__content {
+  margin-left: 160px;
+}
+
+.banner__heading {
+  width: 489px;
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2; /* 120% */
+  letter-spacing: -1px;
+}
+
+.banner__desc {
+  margin-top: 18px;
+  width: 586px;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 200;
+  line-height: 1.667;
+}
+
+.banner__apps {
+  margin-top: 38px;
+  display: flex;
+  gap: 28px;
+}
+
+.banner__apps svg {
+  cursor: pointer;
+}
