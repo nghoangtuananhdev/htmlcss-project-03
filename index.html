@@ -99,11 +99,11 @@
 
   <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="home">
       <div class="container">
         <div class="header-top">
           <!-- Logo -->
-          <a href="/">
+          <a href="./index.html">
             <div class="logo">
               <div class="logo__circle"></div>
               <div class="logo__brand">
@@ -117,16 +117,18 @@
           <nav class="navbar">
             <ul class="navbar__list">
               <li class="navbar__item">
-                <a href="#!" class="navbar__link navbar__link--active">Home</a>
+                <a href="#home" class="navbar__link navbar__link--active"
+                  >Home</a
+                >
               </li>
               <li class="navbar__item">
-                <a href="#!" class="navbar__link">Services</a>
+                <a href="#services" class="navbar__link">Services</a>
               </li>
               <li class="navbar__item">
-                <a href="#!" class="navbar__link">About</a>
+                <a href="#about" class="navbar__link">About</a>
               </li>
               <li class="navbar__item">
-                <a href="#!" class="navbar__link">Doctors</a>
+                <a href="#doctors" class="navbar__link">Doctors</a>
               </li>
             </ul>
           </nav>
@@ -173,7 +175,7 @@
     <!-- Main -->
     <main>
       <!-- Services -->
-      <section class="services">
+      <section class="services" id="services">
         <div class="container">
           <!-- Services Top / Header -->
           <div class="services__top">
@@ -324,7 +326,7 @@
       </section>
 
       <!-- How it works -->
-      <section class="how-it-works">
+      <section class="how-it-works" id="about">
         <div class="container">
           <!-- How it works top / header -->
           <div class="how-it-works__top">
@@ -455,12 +457,12 @@
       </section>
 
       <!-- Dentist / Team section -->
-      <section class="dentist">
+      <section class="dentist" id="doctors">
         <div class="container">
           <!-- Dentist Top / Header -->
           <div class="dentist__top">
             <h2 class="dentist__heading">Our virtual dentist</h2>
-            <a href="#!" class="btn dentist__btn">Meet our dentist</a>
+            <a href="#" class="btn dentist__btn">Meet our dentist</a>
           </div>
 
           <!-- Dentist List -->
@@ -876,7 +878,7 @@
         <div class="footer__top">
           <!-- Column 1: Brand -->
           <div class="footer__col footer__col--brand">
-            <a href="/">
+            <a href="./index.html">
               <div class="logo">
                 <div class="logo__circle"></div>
                 <div class="logo__brand">
